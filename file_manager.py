@@ -10,7 +10,7 @@ class FileManager:
             read = file.read()
             return print(read)
         except IOError:
-            return "Wystąpił błąd, nie można odczytać pliku."
+            print("Wystąpił błąd, nie można odczytać pliku.")
 
     def update_file(self, text_data):
         try:
@@ -18,4 +18,4 @@ class FileManager:
             file.write(text_data)
             file.close()
         except IOError:
-            return "Wystąpił błąd, nie można zapisać pliku."
+            print("Wystąpił błąd, nie można zapisać pliku.")
